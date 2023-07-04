@@ -1,5 +1,32 @@
 import './style.css'
 import {getWeather} from './weather'
+import myImage from './public/icons/0.png';
+import myImage1 from './public/icons/1.png';
+import myImage2 from './public/icons/2.png';
+import myImage3 from './public/icons/3.png';
+import myImage4 from './public/icons/45.png';
+import myImage5 from './public/icons/48.png';
+import myImage6 from './public/icons/51.png';
+import myImage7 from './public/icons/53.png';
+import myImage8 from './public/icons/55.png';
+import myImage9 from './public/icons/56.png';
+import myImage10 from './public/icons/57.png';
+import myImage11 from './public/icons/61.png';
+import myImage12 from './public/icons/63.png';
+import myImage13 from './public/icons/65.png';
+import myImage14 from './public/icons/66.png';
+import myImage15 from './public/icons/67.png';
+import myImage16 from './public/icons/71.png';
+import myImage17 from './public/icons/73.png';
+import myImage18 from './public/icons/77.png';
+import myImage19 from './public/icons/80.png';
+import myImage20 from './public/icons/81.png';
+import myImage21 from './public/icons/82.png';
+import myImage22 from './public/icons/85.png';
+import myImage23 from './public/icons/86.png';
+import myImage24 from './public/icons/95.png';
+import myImage25 from './public/icons/96.png';
+import myImage26 from './public/icons/99.png';
 
 
 navigator.geolocation.getCurrentPosition(positionSuccess , positionFailure)
