@@ -1,0 +1,221 @@
+* , *::after , *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* ---------------------------------------body------------------------------ */
+body {
+  margin: 0;
+  background-color: hsl(200, 100%, 85%);
+  color: hsl(200, 100%, 10%);
+  font-family: sans-serif;
+}
+/* ---------------------------------------header---------------------------- */
+.header{
+  display: flex;
+}
+
+/* -------------------------------------left-header-------------------------- */
+.left--header{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* weather icon of left header section */
+.weather-icon{
+  width: 60px;
+  height: 60px;
+  padding-right: 1rem;
+  /* background-color: brown; */
+}
+
+/* large class for main image */
+#large {
+  height: 120px;
+  width: 120px;
+}
+.left--header{
+  font-size: 35px;
+  margin: .5em;
+  padding: .5rem;
+
+  border-right: 2px solid hsl(200, 100%, 10%);;
+  
+}
+.left--header #degree--symbol {
+  font-size: 25px;
+  margin-bottom: 7px;
+  
+}
+
+span.current--temperature{
+  padding-left: 1rem;
+}
+/* --------------------------------------right-header--------------------------- */
+.right--header{
+  display: grid;
+  width: 50%;
+  justify-content: space-around;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+
+  gap: 0.5rem;
+  margin: .5em;
+  padding: .5rem;
+}
+
+.info--group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.info--group .label{
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: hsl(200, 100%, 20%);
+
+}
+
+.sub--group--value{
+  font-size: 0.8em;
+  margin-left: 2px;
+}
+
+.value{
+  font-size: 2em;
+}
+
+.degree--symbol{
+  /* margin-bottom: 50px; */
+  /* display: inline-block; */
+  /* background-color: brown; */
+  /* margin-bottom: 25px; */
+  font-size: 32px;
+
+
+}
+
+
+#deg--s{
+  background-color: red;
+}
+
+
+.test{
+  display: flex;
+}
+
+.blurred{
+  filter: blur(3px);
+  overflow: hidden;
+}
+
+/* -----------------------------------------Days section----------------------- */
+
+.days--section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,125px);
+  gap: 1em;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: .5em;
+
+}
+
+.day--card{
+  border: 1.5px solid #004466;
+  border-radius: 3px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  padding: 0.25em;
+}
+
+
+.day--card-day{
+  font-size: 15px;
+  color: #00447a;
+}
+
+
+.day--card-temp{
+  font-weight: 800;
+}
+
+
+/* ----------------------------Table section--------------------------------- */
+
+
+
+.hour--section{
+  /* border: 2px solid black; */
+  
+  
+  width: 100%;
+  border-spacing: 0;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+.hour-row{
+  background-color: hsl(200, 60%, 75%);
+  text-align: center;
+}
+
+.info-group div.label{
+  font-weight: 600;
+  /* background-color: aliceblue; */
+}
+
+.hour-row:nth-child(2n) {
+  background-color: hsl(200, 60%, 70%);
+}
+
+
+.hour-row > td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+#img--icon{
+  width: 80px;
+  height: 60px;
+}
+
+#day-img-icon{
+  width: 85px;
+  height: 75px;
+}
+
+
+
+@media (max-width:750px) {
+  .left--header{
+    width: 35%;
+  }
+
+  .right--header{
+    width: 60%;
+  }
+
+  #large{
+    padding-left: 0.6rem;
+    width: 75px;
+    height: 75px;
+  }
+
+
+  
+}
